@@ -1,0 +1,13 @@
+.navbar-brand{
+
+    font-size : 3rem;
+    margin-top : 2%;
+    font-family: 'Recursive', sans-serif;
+    color : #379237
+    
+}
+
+.navbar-brand:hover{
+
+    color : #379237
+}

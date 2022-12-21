@@ -2,11 +2,11 @@
 
 function Navbar(){
 return(
-    <nav className="navbar bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <nav className="navbar">
+   <div className="container nav-bar">
+    <a className="navbar-brand mx-auto" href="#">
     
-      Summarizer
+      Summarizer.
     </a>
   </div>
 </nav>
