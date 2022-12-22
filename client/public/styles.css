@@ -1,3 +1,7 @@
+body{
+
+    background-color : whitesmoke;
+}
 .navbar-brand{
 
     font-size : 3rem;
@@ -10,4 +14,16 @@
 .navbar-brand:hover{
 
     color : #379237
+}
+
+
+.form{
+
+     border-style : none;
+     margin-top : 10%;
+     font-size : 1.05rem;
+     font-family : 'Montserrat',sans-serif;
+     font-weight : 500;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3); 
+     resize : none;
 }
