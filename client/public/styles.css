@@ -20,7 +20,7 @@ body{
 .form{
 
      border-style : none;
-     margin-top : 10%;
+     margin-top : 7%;
      font-size : 1.05rem;
      font-family : 'Montserrat',sans-serif;
      font-weight : 500;
@@ -43,4 +43,9 @@ body{
 
 button:hover{
 background-color : green;
+}
+
+.footer{
+
+    margin-top : 7%;
 }
