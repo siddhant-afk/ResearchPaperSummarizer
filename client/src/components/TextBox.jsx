@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Form } from "react-router-dom";
 
-function TextBox(){
+function TextBox(props){
  
 
 const [article,setArticle] = useState("");
@@ -15,8 +15,8 @@ function handleChange(event){
 
 function handleClick(event){
 
-
-    event.preventDefault()
+    props.onSubmit(article);
+    event.preventDefault();
 
 }
 
