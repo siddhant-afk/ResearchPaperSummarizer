@@ -1,15 +1,33 @@
-
+import { useState } from "react";
+import { Form } from "react-router-dom";
 
 function TextBox(){
  
+
+const [article,setArticle] = useState("");
+
+
+function handleChange(event){
+
+    setArticle(event.target.value)
+  
+}
+
+function handleClick(event){
+
+
+    event.preventDefault()
+
+}
+
  return(
-    <div className="container">
+    <div className="container text-box">
 
-<form action="" className=" mx-auto">
+<form action="/Result" className=" mx-auto">
 
-<textarea name="" id="" cols="133" rows="10" placeholder="Enter Text or Article.." className="mx-auto form px-4 py-3"></textarea>
+<textarea name="" id="" cols="83" rows="10" placeholder="Enter Text or Article.." className=" form px-4 py-3" value={article} onChange={handleChange}></textarea>
 
-<button type="submit" className="button">Summarize</button>
+<button type="submit" className="button" onClick={handleClick}>Summarize</button>
 </form>
     </div>
 

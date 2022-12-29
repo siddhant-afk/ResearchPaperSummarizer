@@ -26,6 +26,7 @@ body{
      font-weight : 500;
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3); 
      resize : none;
+     
 }
 
 .button{
@@ -43,6 +44,12 @@ body{
 
 button:hover{
 background-color : green;
+}
+
+.summary{
+    margin-top : 7%;
+    
+    
 }
 
 .footer{
