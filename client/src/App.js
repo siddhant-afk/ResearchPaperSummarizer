@@ -2,15 +2,32 @@ import Navbar from "./components/Navbar";
 import TextBox from "./components/TextBox";
 import Footer from "./components/Footer";
 import Result from "./components/Result";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 function App() {
 
 
   const [summary,setSummary] = useState("");
+  
+  const[data,setData] = useState({})
+
+
+  useEffect(()=>{
+    fetch("/summary").then(
+     res => res.json()
+    ).then(
+      data =>{
+        setData(data)
+        console.log(data)
+      }
+    )
+  },[])
+  
 
   function summarize(article){
-  
+    
+    
     setSummary(article);
+    
   }
   return (
    <div>
