@@ -23,10 +23,10 @@ function App() {
   },[])
   
 
-  function summarize(article){
+  function summarize(){
     
     
-    setSummary(article);
+    setSummary(data["summary"]);
     
   }
   return (
